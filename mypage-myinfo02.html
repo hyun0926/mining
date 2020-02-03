@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<title>ADM CAT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="">
+	<meta name="description" content="adm">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<meta property="og:site_name" content="ADM CAT">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ADM CAT">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" media="all" />
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/icheck.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/canvasjs.min.js"></script>
+</head>
+<body>
+	<header>
+		<span class="back"><a href="#n"><i class="xi-angle-left"></i></a></span>
+		<h1><a href="index.html" class="logo"><img src="images/common/logo.png" alt="ADM CAT"></a></h1>
+	</header>
+
+
+<main class="myinfo" role="main">
+	<div class="hgroup">
+		<h2 class="page-title">마이페이지</h2>
+	</div>
+	<div class="tab-menu tab2">
+		<li><a href="mypage-myinfo.html" class="selected">회원정보</a></li>
+		<li><a href="mypage-withdraw.html">회원탈퇴</a></li>
+	</div>
+	<div class="white-wrap">
+		<div class="hgroup-sub">
+			<h3 class="page-title-sub">개인정보 입력</h3>
+		</div>
+		<div class="cell">
+			<table class="normal-table">
+				<colgroup>
+					<col width="25%" />
+					<col width="75%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>이름<br/>(업체명)*</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>사업자번호</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>담당자 이름</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th>대행사</th>
+						<td>업체1 &ensp;&ensp;<a href="#agency-info" class="btn-link" rel="modal:open">상세정보</a></td>
+					</tr>
+					<tr>
+						<th>이메일(ID)</th>
+						<td>cmesoft@naver.com</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><a href="#n" class="btn-link">비밀번호변경</a></td>
+					</tr>
+					<tr>
+						<th>휴대폰번호</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>대표자명</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>업태</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>종목</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>국가*</th>
+						<td>
+							<select style="width: 60%;">
+								<option value="">한국</option>
+								<option value="">미국</option>
+								<option value="">북한</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>시간 표시 기준국가*</th>
+						<td>
+							<select style="width: 60%;">
+								<option value="">한국</option>
+								<option value="">미국</option>
+								<option value="">북한</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>ADM 잔액</th>
+						<td><strong>500 ADM</strong></td>
+					</tr>
+					<tr>
+						<th rowspan="3">주소</th>
+						<td><input type="text" style="width: 49%;" /> <a href="#n" class="btn-grad__default">검색</a></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="기본 주소" /></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="상세 주소" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="mypage-myinfo02.html" class="btn-primary">저장</a>
+			<div id="agency-info" class="modal middle-blocker">
+				<div class="inner">
+					<div class="tgroup">
+						<h3>대행사 정보</h3>
+					</div>
+					<table class="normal-table">
+						<colgroup>
+							<col width="25%" />
+							<col width="75%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>대행사명<br>(법인명)</th>
+								<td>업체1</td>
+							</tr>
+							<tr>
+								<th>담당자 이름</th>
+								<td>김개똥</td>
+							</tr>
+							<tr>
+								<th>담당자 이메일</th>
+								<td>ggg@gmail.com</td>
+							</tr>
+							<tr>
+								<th>주소</th>
+								<td>서울시 강남구 역삼동 123</td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td>010123456</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>			
+		</div>
+		<div class="cell">
+			<h4 class="con-title">Google OTP</h4>
+			<p class="desc">구글OTP등록은 웹에서 진행해주시기 바랍니다.</p>
+			<div class="otp-info">
+				<p class="btn-control">펼치기 <i class="xi-angle-down"></i></p>
+				<div class="inner">
+					<ol class="optSeting">
+						<li>
+							<svg height="40" width="40">
+								<polygon points="0,0 40,0 0,40" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>1</span>
+							<img src="images/sub/opt_img01.jpg" alt="" />
+							<p>휴대폰 스토어에서 "Google OTP"앱을 설치하시기 바랍니다.</p>
+						</li>
+						<li>
+							<svg height="40" width="40">
+								<polygon points="0,0 40,0 0,40" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>2</span>
+							<img src="images/sub/opt_img02.jpg" alt="" />
+							<p>"Google OTP"앱을 실행한 후 "바코드 스캔"을 선택합니다.</p>
+						</li>
+						<li>
+							<svg height="40" width="40">
+								<polygon points="0,0 40,0 0,40" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>3</span>
+							<img src="images/sub//opt_img03.jpg" alt="" />
+							<p>옆의 QR코드를 스캔하시기 바랍니다.</p>
+						</li>
+						<li>
+							<svg height="40" width="40">
+								<polygon points="0,0 40,0 0,40" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>4</span>
+							<img src="images/sub//opt_img04.jpg" alt="" />
+							<p>"Google OTP"앱에서 보이는 OTP번호를 입력하시기 바랍니다.</p>
+						</li>
+					</ol>  
+				</div>
+			</div>
+			<script>
+				$(".btn-control").click(function () {
+					$('.inner').slideToggle({
+						direction: "up"
+					}, 100);
+					$(".otp-info").toggleClass("open");
+				})
+			</script>
+		</div>
+	</div>
+</main>
+
+	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+		<span class="cd-nav-icon"></span>
+
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#1b85e8" stroke-width="1" cx="22" cy="22" r="20" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+	<div id="cd-nav" class="cd-nav">
+		<div class="cd-navigation-wrapper">
+			<div class="cd-half-block">
+				<div class="nav-top">
+					<em class="userName"><strong>홍길동</strong>님</em>
+					<span class="alarm">
+						<i class="xi-bell-o"></i>
+						<span class="alarmNum">2</span>
+					</span>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+				<nav>
+					<ul class="cd-accordion-menu animated">
+						<li class="has-children">
+							<input type="checkbox" name="group-1" id="group-1">
+							<label for="group-1">입찰관리</label>
+							<ul class="menu-bidding">
+								<li><a href="bidding.html">입찰관리</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-2" id="group-2">
+							<label for="group-2">ADM 관리</label>
+							<ul class="menu-admManage">
+								<li><a href="adm-manage-deposit.html">ADM 입금</a></li>
+								<li><a href="adm-manage-withdrawal.html">ADM 출금</a></li>
+								<li><a href="adm-manage-banking.html">ADM 입출금내역</a></li>
+								<li><a href="adm-manage-property.html">ADM 자산현황</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-3" id="group-3">
+							<label for="group-3">활동지수</label>
+							<ul class="menu-activity">
+								<li><a href="statistics-all-day.html">전체 활동 수 통계</a></li>
+								<li><a href="statistics-area.html">지역별 통계</a></li>
+								<li><a href="statistics-age.html">나이대별 통계</a></li>
+								<li><a href="statistics-gender.html">성별 통계</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-4" id="group-4">
+							<label for="group-4">대행사 안내</label>
+							<ul class="menu-customer">
+								<li><a href="agency.html">대행사 안내</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-5" id="group-5">
+							<label for="group-5">고객센터</label>
+							<ul class="menu-customer">
+								<li><a href="customer-notice.html">공지사항</a></li>
+								<li><a href="customer-faq.html">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-6" id="group-6">
+							<label for="group-6">마이페이지</label>
+							<ul class="menu-mypage">
+								<li><a href="mypage-myinfo.html">회원정보</a></li>
+								<li><a href="mypage-qna-center.html">1:1문의 답변확인</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-7" id="group-7">
+							<label for="group-7">기타</label>
+							<ul class="menu-etc">
+								<li><a href="notification.html">알림설정</a></li>
+								<li><a href="#ver-info" rel="modal:open">버전</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div id="ver-info" class="modal middle-blocker">
+					<div class="inner">
+						<div class="tgroup">
+							<h3>버전정보</h3>
+						</div>
+						<div class="img-cover">
+							<img src="images/common/symbol.jpg" alt="" />
+							<em>현재 버전 <strong>1.0</strong></em>
+						</div>
+						<p class="ver-info">현재 최신 버전입니다.</p>
+					</div>
+				</div>				
+			</div>
+		</div> 
+	</div>
+</body>
+</html>

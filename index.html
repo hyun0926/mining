@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<title>ADM CAT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="">
+	<meta name="description" content="adm">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<meta property="og:site_name" content="ADM CAT">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ADM CAT">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" media="all" />
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/icheck.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/canvasjs.min.js"></script>
+</head>
+<body>
+	<header>
+		<span class="back"><a href="#n"><i class="xi-angle-left"></i></a></span>
+		<h1><a href="index.html" class="logo"><img src="images/common/logo.png" alt="ADM CAT"></a></h1>
+	</header>
+
+
+<main class="index" role="main">
+	<div class="contents-wrap">
+		<p class="page_state">
+			<i class="xi-user"></i>
+			회원용
+		</p>
+		<div class="main_title">
+			<h2>
+				저희 사이트에
+				<em>처음 방문하셨나요?</em>
+			</h2>
+			<small>
+				ADM 콘텐츠 경매 시스템을 통해 원하는 수단과<br/>
+				방법으로 효과적인 가치를 창출 할 수 있게 도와드립니다.
+			</small>
+		</div>
+		<div class="process_doughnut">
+			<ul class="process_list">
+				<li class="step4 Ani-1 delay-4">
+					<small>step.4</small>
+					국가별, 지역별 콘텐츠 배포
+				</li>
+				<li class="step1 Ani-1 delay-1">
+					<small>step.1</small>
+					업체 및 콘텐츠 등록
+				</li>
+				<li class="step3 Ani-1 delay-3">
+					<small>step.3</small>
+					입찰 및 검증
+				</li>
+				<li class="step2 Ani-1 delay-2">
+					<small>step.2</small>
+					콘텐츠 경매
+				</li>
+			</ul>
+			<div id="chartContainer1" class="chart" style="display: inline-block; width: 174px; width: 174px;"></div>
+			<div id="chartContainer2" class="chart blue" style="display: inline-block; width: 194px; width: 194px;"></div>
+			<div class="img_wrap">
+				<img src="images/common/img_symbol.png" alt="" class="img_symbol Ani-1 delay-5">
+			</div>
+		</div>
+		<a href="#n" class="btn_download">
+			<i class="xi-download"></i>
+			앱 다운로드
+		</a>
+		<ul class="list_dot">
+			<li>일반회원의 경우, “앱 다운로드”버튼을 클릭하여 앱을 설치한 후 이용해주시기 바랍니다.</li>
+			<li>대행사회원의 경우, 웹 사이트에서 이용해주시기 바립니다.</li>
+		</ul>
+	</div>
+</main>
+
+<script>
+	window.onload = function () {
+		CanvasJS.addColorSet("orangeShades",
+    [//colorSet Array
+
+		"#ff9d02",
+    "#ff7a02",
+    "#ff6102",
+    "#ff3e02"
+    ]);
+		CanvasJS.addColorSet("blueShades",
+    [//colorSet Array
+
+		"#1273d7"
+    ]);
+	var chart1 = new CanvasJS.Chart("chartContainer1", {
+		colorSet: "orangeShades",
+		animationEnabled: true,
+		animationDuration: 1000,
+		backgroundColor: "rgba(11,29,49,0.01)",
+		data: [{
+			type: "doughnut",
+			startAngle: 270,
+			//innerRadius: 60,
+			innerRadius: "92%",
+			dataPoints: [
+				{ y: 25 },
+				{ y: 25 },
+				{ y: 25 },
+				{ y: 25 }
+			]
+		}]
+	});
+	var chart2 = new CanvasJS.Chart("chartContainer2", {
+		colorSet: "blueShades",
+		animationEnabled: true,
+		animationDuration: 1000,
+		backgroundColor: "rgba(11,29,49,0.01)",
+		data: [{
+			type: "doughnut",
+			startAngle: 270,
+			//innerRadius: 60,
+			innerRadius: "98%",
+			dataPoints: [
+				{ y: 100 }
+			]
+		}]
+	});
+	chart1.render();
+	chart2.render();
+	}
+	$(function(){
+		// main animation
+	  $('.process_doughnut ul').delay(1000).addClass('Ani-on');
+		$('.process_doughnut .img_wrap').delay(1000).addClass('Ani-on');
+	})
+</script>
+
+	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+		<span class="cd-nav-icon"></span>
+
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#1b85e8" stroke-width="1" cx="22" cy="22" r="20" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+	<div id="cd-nav" class="cd-nav">
+		<div class="cd-navigation-wrapper">
+			<div class="cd-half-block">
+				<div class="nav-top">
+					<em class="userName"><strong>홍길동</strong>님</em>
+					<span class="alarm">
+						<i class="xi-bell-o"></i>
+						<span class="alarmNum">2</span>
+					</span>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+				<nav>
+					<ul class="cd-accordion-menu animated">
+						<li class="has-children">
+							<input type="checkbox" name="group-1" id="group-1">
+							<label for="group-1">입찰관리</label>
+							<ul class="menu-bidding">
+								<li><a href="bidding.html">입찰관리</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-2" id="group-2">
+							<label for="group-2">ADM 관리</label>
+							<ul class="menu-admManage">
+								<li><a href="adm-manage-deposit.html">ADM 입금</a></li>
+								<li><a href="adm-manage-withdrawal.html">ADM 출금</a></li>
+								<li><a href="adm-manage-banking.html">ADM 입출금내역</a></li>
+								<li><a href="adm-manage-property.html">ADM 자산현황</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-3" id="group-3">
+							<label for="group-3">활동지수</label>
+							<ul class="menu-activity">
+								<li><a href="statistics-all-day.html">전체 활동 수 통계</a></li>
+								<li><a href="statistics-area.html">지역별 통계</a></li>
+								<li><a href="statistics-age.html">나이대별 통계</a></li>
+								<li><a href="statistics-gender.html">성별 통계</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-4" id="group-4">
+							<label for="group-4">대행사 안내</label>
+							<ul class="menu-customer">
+								<li><a href="agency.html">대행사 안내</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-5" id="group-5">
+							<label for="group-5">고객센터</label>
+							<ul class="menu-customer">
+								<li><a href="customer-notice.html">공지사항</a></li>
+								<li><a href="customer-faq.html">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-6" id="group-6">
+							<label for="group-6">마이페이지</label>
+							<ul class="menu-mypage">
+								<li><a href="mypage-myinfo.html">회원정보</a></li>
+								<li><a href="mypage-qna-center.html">1:1문의 답변확인</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-7" id="group-7">
+							<label for="group-7">기타</label>
+							<ul class="menu-etc">
+								<li><a href="notification.html">알림설정</a></li>
+								<li><a href="#ver-info" rel="modal:open">버전</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div id="ver-info" class="modal middle-blocker">
+					<div class="inner">
+						<div class="tgroup">
+							<h3>버전정보</h3>
+						</div>
+						<div class="img-cover">
+							<img src="images/common/symbol.jpg" alt="" />
+							<em>현재 버전 <strong>1.0</strong></em>
+						</div>
+						<p class="ver-info">현재 최신 버전입니다.</p>
+					</div>
+				</div>				
+			</div>
+		</div> 
+	</div>
+</body>
+</html>

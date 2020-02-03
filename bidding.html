@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<title>ADM CAT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="">
+	<meta name="description" content="adm">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<meta property="og:site_name" content="ADM CAT">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ADM CAT">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" media="all" />
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/icheck.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/canvasjs.min.js"></script>
+</head>
+<body>
+	<header>
+		<span class="back"><a href="#n"><i class="xi-angle-left"></i></a></span>
+		<h1><a href="index.html" class="logo"><img src="images/common/logo.png" alt="ADM CAT"></a></h1>
+	</header>
+
+
+<main class="bidding" role="main">
+	<div class="hgroup">
+		<h2 class="page-title">입찰관리</h2>
+	</div>
+	<div class="contents-wrap">
+		<div class="cell name-tag">
+			<h4>홍길동님</h4>
+			<div class="box">
+				<div class="left">
+					<dl>
+						<dt>보유 ADM</dt>
+						<dd>501.0125<span>ADM</span></dd>
+					</dl>
+				</div>
+				<div class="right">
+					<dl>
+						<dt>사용중</dt>
+						<dd>1.0125 ADM</dd>
+						<dt>사용가능</dt>
+						<dd>500 ADM</dd>
+					</dl>
+				</div>
+			</div>
+			<ul class="btn-wrap">
+				<li><a href="#n">충전</a></li>
+				<li><a href="bidding02.html">입찰관리 바로가기</a></li>
+			</ul>
+		</div>
+		<div class="cell contens-list">
+			<h3 class="boxing-title">콘텐츠</h3>
+			<ul>
+				<li>
+					<a href="bidding-detail.html">
+					<div class="list-title">
+						<h4>게임<span class="category">(게임-난이도 2)</span></h4>
+					</div>
+					<dl>
+						<dt>입찰금액</dt>
+						<dd>1,000<span>(잔액 495)</span></dd>
+					</dl>
+					<dl>
+						<dt>활동수</dt>
+						<dd>50</dd>
+					</dl>
+					<dl>
+						<dt>1회평균소진량</dt>
+						<dd>1,100</dd>
+					</dl>
+					</a>
+				</li>
+				<li>
+					<a href="bidding-detail.html">
+					<div class="list-title">
+						<h4>동영상<span class="category">(게임-난이도 2)</span></h4>
+					</div>
+					<dl>
+						<dt>입찰금액</dt>
+						<dd>1,000<span>(잔액 495)</span></dd>
+					</dl>
+					<dl>
+						<dt>활동수</dt>
+						<dd>50</dd>
+					</dl>
+					<dl>
+						<dt>1회평균소진량</dt>
+						<dd>1,100</dd>
+					</dl>
+					</a>
+				</li>
+				<li>
+					<a href="bidding-detail.html">
+					<div class="list-title">
+						<h4>이미지<span class="category">(게임-난이도 2)</span></h4>
+					</div>
+					<dl>
+						<dt>입찰금액</dt>
+						<dd>1,000<span>(잔액 495)</span></dd>
+					</dl>
+					<dl>
+						<dt>활동수</dt>
+						<dd>50</dd>
+					</dl>
+					<dl>
+						<dt>1회평균소진량</dt>
+						<dd>1,100</dd>
+					</dl>
+					</a>
+				</li>
+				<li>
+					<a href="bidding-detail.html">
+					<div class="list-title">
+						<h4>동영상<span class="category">(게임-난이도 2)</span></h4>
+					</div>
+					<dl>
+						<dt>입찰금액</dt>
+						<dd>1,000<span>(잔액 495)</span></dd>
+					</dl>
+					<dl>
+						<dt>활동수</dt>
+						<dd>50</dd>
+					</dl>
+					<dl>
+						<dt>1회평균소진량</dt>
+						<dd>1,100</dd>
+					</dl>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="cell chart-box">
+			<h3 class="boxing-title">활동 수<span>(최근 7일)</span></h3>
+			<div class="cover">
+				<div id="chartContainer" style="height: 270px; width: 100%;"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="js/canvasjs.min.js"></script>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	axisY:{
+		interlacedColor: "rgba(0,111,216,0.05)",
+		gridColor: "rgba(0,111,216,0.2)",
+		labelFontSize: 12,
+		labelFontColor: "#006fd8",
+		tickColor: "rgba(0,111,216,0.2)",
+	},
+	data: [{
+		type: "column", //change type to bar, line, area, pie, etc
+		//indexLabel: "{y}", //Shows y value on all Data Points
+		color: 'rgba(0,111,216,0.6)',
+		indexLabelFontColor: "#5A5757",
+		indexLabelPlacement: "outside",
+		dataPoints: [
+			{ label: "7/1", y: 250 },
+			{ label: "7/2", y: 350 },
+			{ label: "7/3", y: 400 },
+			{ label: "7/4", y: 320 },
+			{ label: "7/5", y: 380 },
+			{ label: "7/6", y: 200 },
+			{ label: "7/7", y: 230 },
+		]
+	}]
+});
+chart.render();
+}
+</script>
+
+
+	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+		<span class="cd-nav-icon"></span>
+
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#1b85e8" stroke-width="1" cx="22" cy="22" r="20" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+	<div id="cd-nav" class="cd-nav">
+		<div class="cd-navigation-wrapper">
+			<div class="cd-half-block">
+				<div class="nav-top">
+					<em class="userName"><strong>홍길동</strong>님</em>
+					<span class="alarm">
+						<i class="xi-bell-o"></i>
+						<span class="alarmNum">2</span>
+					</span>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+				<nav>
+					<ul class="cd-accordion-menu animated">
+						<li class="has-children">
+							<input type="checkbox" name="group-1" id="group-1">
+							<label for="group-1">입찰관리</label>
+							<ul class="menu-bidding">
+								<li><a href="bidding.html">입찰관리</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-2" id="group-2">
+							<label for="group-2">ADM 관리</label>
+							<ul class="menu-admManage">
+								<li><a href="adm-manage-deposit.html">ADM 입금</a></li>
+								<li><a href="adm-manage-withdrawal.html">ADM 출금</a></li>
+								<li><a href="adm-manage-banking.html">ADM 입출금내역</a></li>
+								<li><a href="adm-manage-property.html">ADM 자산현황</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-3" id="group-3">
+							<label for="group-3">활동지수</label>
+							<ul class="menu-activity">
+								<li><a href="statistics-all-day.html">전체 활동 수 통계</a></li>
+								<li><a href="statistics-area.html">지역별 통계</a></li>
+								<li><a href="statistics-age.html">나이대별 통계</a></li>
+								<li><a href="statistics-gender.html">성별 통계</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-4" id="group-4">
+							<label for="group-4">대행사 안내</label>
+							<ul class="menu-customer">
+								<li><a href="agency.html">대행사 안내</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-5" id="group-5">
+							<label for="group-5">고객센터</label>
+							<ul class="menu-customer">
+								<li><a href="customer-notice.html">공지사항</a></li>
+								<li><a href="customer-faq.html">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-6" id="group-6">
+							<label for="group-6">마이페이지</label>
+							<ul class="menu-mypage">
+								<li><a href="mypage-myinfo.html">회원정보</a></li>
+								<li><a href="mypage-qna-center.html">1:1문의 답변확인</a></li>
+							</ul>
+						</li>
+						<li class="has-children">
+							<input type="checkbox" name="group-7" id="group-7">
+							<label for="group-7">기타</label>
+							<ul class="menu-etc">
+								<li><a href="notification.html">알림설정</a></li>
+								<li><a href="#ver-info" rel="modal:open">버전</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div id="ver-info" class="modal middle-blocker">
+					<div class="inner">
+						<div class="tgroup">
+							<h3>버전정보</h3>
+						</div>
+						<div class="img-cover">
+							<img src="images/common/symbol.jpg" alt="" />
+							<em>현재 버전 <strong>1.0</strong></em>
+						</div>
+						<p class="ver-info">현재 최신 버전입니다.</p>
+					</div>
+				</div>				
+			</div>
+		</div> 
+	</div>
+</body>
+</html>
